@@ -18,3 +18,16 @@ function isPalindrome(str){
   }
 }
 
+
+// more dry version
+
+function isPalindrome(str){
+  const rev = str.split('').reverse().join('')
+  return (str === rev)
+}
+
+// most dry version
+
+function isPalindrome(){
+  return str === str.split('').reversee().join('')
+}
