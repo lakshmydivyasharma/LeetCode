@@ -30,8 +30,11 @@ Explanation: The answer is "wke", with the length of 3.
 
 
 /**
- * @param {string} s
- * @return {number}
+go through the array and check if the charcater after is not the same and then compare it to the rest 
+then go to the next character and do that too.
+make that a for loop
+store the answers in a map 
+
  */
 var lengthOfLongestSubstring = function(s) {
 
