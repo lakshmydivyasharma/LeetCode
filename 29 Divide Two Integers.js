@@ -50,6 +50,20 @@ Accepted
 Submissions
 1,965,815
 
+
+
+Notes:
+divide numbers without divide or modulus; so use difference of numberes. when using a divident and a divisor, use subtraction.
+see which doubling of 3 x 2 x 2 and see how many I can take the largest away from 10 at a time; store it and hold on to it
+
+int divide (int dividend and int divisor){
+  if(integer min value === dividend and divisor is equal to -1){
+    return integer max value
+  }
+  then take the absolute values of dividend and intb is math.abs of divisor then the result will be the way we return what the Q  is asking what we return
+}
+
+
 /**
  * @param {number} dividend
  * @param {number} divisor
