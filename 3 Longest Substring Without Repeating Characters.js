@@ -30,12 +30,17 @@ Explanation: The answer is "wke", with the length of 3.
 
 
 /**
-go through the array and check if the charcater after is not the same and then compare it to the rest 
+go through the array and check if the charcater after is not the same and then compare it to the rest
 then go to the next character and do that too.
 make that a for loop
-store the answers in a map 
-
+store the answers in a map
  */
+
+ notes: check the left and right are not matching then you can move the left pointer then store these values into a map
+
+longest length = 0 to start, you have to go through the whole array
+this time complexity is O(n)^2
+
 var lengthOfLongestSubstring = function(s) {
 
     let map = {}
