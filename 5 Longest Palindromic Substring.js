@@ -14,7 +14,7 @@ Given a string s, find the longest palindromic substring in s. You may assume th
 
 Example 1:
 
-Input: "babad"
+Input: "babad"  --- bab or aba are both the longest, size 3
 Output: "bab"
 Note: "aba" is also a valid answer.
 Example 2:
@@ -22,6 +22,17 @@ Example 2:
 Input: "cbbd"
 Output: "bb"
 
+NOTES:
+a substring is a contiguous sequence of characters within a string.
+
+whats  the brute force?
+generate all substrings of a string in n^2 time.
+n^2 x n = n^3
+outter for loop
+
+then check if each one of those results have a for loop
+
+two cases for palindrome --> started from the middle of the string; left or right one;
 
 /**
  * @param {string} s
