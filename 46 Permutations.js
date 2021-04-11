@@ -112,3 +112,29 @@ const findPermutations = (temp, nums, result) => {
     nums.splice(i, 0, newNum);
   }
 };
+
+
+THIRD SOLUTION w/ runtime n!
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+
+// array variable is going to be initialized through empty array
+// answers is going to have the answers and it will be pushed in there
+// if nums.length === 0; then we have exhausted it so lets start there
+
+var permute = function(nums, currentSet=[], answers=[]) {
+     if (!nums.length) answers.push([...currentSet]);
+
+     for(let i = 0; i < nums.length; i++){
+         // first thing I want to do is remove the current number from our nums;
+         // essentially remove everything that doesnt have the current i
+         const newNums = nums.filter((n, index) => index!== i);
+         currentSet.push(nums[i]); //pushed in current number we have chosen
+         // so now call permute and pass in the new nums with the remove number and pass in the current set, and answers
+         permute(newNums, currentSet, answers)
+         currentSet.pop(); //pop out that last item and add the next number in
+     }
+     return answers;
+}
